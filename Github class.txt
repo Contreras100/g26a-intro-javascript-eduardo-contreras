@@ -1,0 +1,37 @@
+*git clone + (url de lo que se clonara) - Clonar la carpeta la cual queremos entrar dentro de git 
+
+*ls es para ver lo que hay dentro de carpetas
+
+*cd es para dirigirnos a una carpeta (se pone cd-nombre de carpeta)
+
+*git checkout + nombre de la carpeta(es para que dentro de nuestra repo nos vayamos a la carpeta que nosotros querramos)
+
+*cd .. - Es para salir de la carpeta de donde estabamos.
+
+*git pull origin + develop(es la carpeta que se va actualizar) - Actualizar la info que acaban de subir en github los sensei u otras personas.
+
+*mkdir + nombre de la carpeta. -Crear una nueva carpeta dentro de la repo.
+
+**No se ponen repo dentro de repo.
+
+*echo "# Contreras100.github.io" >> README.md : -CREAR UN ARCHIVO QUE SE VA A LLAMAR "README", DENTRO DE ESE ARCHIVO CONTENERA "# Contreras100.github.io"
+
+**git init : inicializa una carpeta o le avisa a la carpeta que va a ser un repositorio.
+
+**git add README.md : va añadir todo lo que tengamos en el disco "local" a un punto intermedio entre nuestra computadora y la nube. 
+
+**git commit -m "first commit" : Asignarle un apodo a los cambios que hicimos para que se suban a nuestro repositorio. Osea que al "README" se le añadio una etiqueta que se le llamo "first commit".
+
+**git branch -M main: crea una rama central a la cual se le nombrara "name". 
+
+**git remote add origin https://github.com/Contreras100/Contreras100.github.io.git : Direccion de mi repositorio. Osea hace la conexion o liga el repositorio local con el repositorio en la nube.
+
+**git push -u origin main : Empuje la info que tenemos en niustra computadora hacia nuestro origin main(nuestro repositorio).
+
+**PROCESO PARA SUBIR INFO A LA NUBE.**
+
+**git add .(el punto significa que todo lo que este dentro de la carpeta del repositorio se mandara) y si queremos mandar algo en especial tendremos que poner el nombre embes del punto. 
+
+**git commit + -m + "etiqueta": Su estructura es: git commit "feat : añadi un txt de recursos" 
+
+**git push origin main : Es cuando lo sube.
