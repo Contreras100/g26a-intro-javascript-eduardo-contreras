@@ -1,5 +1,6 @@
 ***************NOTAS SOBRE GIT Y GITHUB**********************************
 EDUARDO CONTRERAS
+BIENVENIDOS
 
 
 +*git clone + (url de lo que se clonara) - Clonar la carpeta la cual queremos entrar dentro de git 
