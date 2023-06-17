@@ -1,16 +1,25 @@
-*git clone + (url de lo que se clonara) - Clonar la carpeta la cual queremos entrar dentro de git 
+***************NOTAS SOBRE GIT Y GITHUB**********************************
+
+
++*git clone + (url de lo que se clonara) - Clonar la carpeta la cual queremos entrar dentro de git 
 
 *ls es para ver lo que hay dentro de carpetas
 
 *cd es para dirigirnos a una carpeta (se pone cd-nombre de carpeta)
 
-*git checkout + nombre de la carpeta(es para que dentro de nuestra repo nos vayamos a la carpeta que nosotros querramos)
+*git checkout + nombre de la carpeta(es para que dentro de nuestra repo nos vayamos a la carpeta que nosotros querramos).
+
+**git checkout + --nombre de la carpeta: Es para revertir los cambios que se han hecho. Siempre y cuando se haya guardado un cambio o se haya echo un snapshoot.
+
+**git diff: para ver las diferencias hechas en los archivos. En rojo te aparece lo anterior y lo verde el cambio que se hizo.
 
 *cd .. - Es para salir de la carpeta de donde estabamos.
 
 *git pull origin + develop(es la carpeta que se va actualizar) - Actualizar la info que acaban de subir en github los sensei u otras personas.
 
 *mkdir + nombre de la carpeta. -Crear una nueva carpeta dentro de la repo.
+
+*pwd: para ver en que directorio estamos. 
 
 **No se ponen repo dentro de repo.
 
@@ -20,18 +29,48 @@
 
 **git add README.md : va añadir todo lo que tengamos en el disco "local" a un punto intermedio entre nuestra computadora y la nube. 
 
+**git commit: Es para decirle a git quien es el que hara los cambios dentro de la repo. Es practicamente logearte para ver quien hizo los cambios. 
+
+**git log: para ver todos los commits que hemos creado. Te dice el autor de quien lo creo y ademas la fecha. Osea todos los "snapshoot" que hemos tomado. 
+
+*******GIT COMMIT(DIFERENTES MANERAS DE HACERLO)
+
+**git commit(ya que estemos "logeados"): Para tener un snapshoot, osea de los primeros cambios que se hiceron en tu git.  Nuestro diferentea cambios y tomarle un tipo de foto a nuestro proyecto. Despues de asignarle el nombre a ese cambio, le das "wq" para que se guarde ese cambio. Y se crean "id" para cada tipo de archivo. 
+
 **git commit -m "first commit" : Asignarle un apodo a los cambios que hicimos para que se suban a nuestro repositorio. Osea que al "README" se le añadio una etiqueta que se le llamo "first commit".
+
+**git commit + -m + "etiqueta": Su estructura es: git commit "feat : añadi un txt de recursos".
+
+*******git branch******
+
+**git branch: nos sirve para crear diferentes "branches"(rama) donde se puede trabajar dentro de una repo. para crear uno es : git branch + nombre de lo que te gustaria crear.
 
 **git branch -M main: crea una rama central a la cual se le nombrara "name". 
 
 **git remote add origin https://github.com/Contreras100/Contreras100.github.io.git : Direccion de mi repositorio. Osea hace la conexion o liga el repositorio local con el repositorio en la nube.
 
-**git push -u origin main : Empuje la info que tenemos en niustra computadora hacia nuestro origin main(nuestro repositorio).
+**git push -u origin main : Empuje la info que tenemos en nuestra computadora hacia nuestro origin main(nuestro repositorio).
 
 **PROCESO PARA SUBIR INFO A LA NUBE.**
 
 **git add .(el punto significa que todo lo que este dentro de la carpeta del repositorio se mandara) y si queremos mandar algo en especial tendremos que poner el nombre embes del punto. 
 
-**git commit + -m + "etiqueta": Su estructura es: git commit "feat : añadi un txt de recursos" 
+
+**git status: Para poder visualizar con que archivos estamos trabajando o cuales faltan por "subir" a git. Osea que ya esten dentro del "staying area". 
 
 **git push origin main : Es cuando lo sube.
+
+***PASOS PARA GITHUB 
+*Inicializar un proyecto , osea decirle a git que empezaras a manejar esa carpeta con git(git init).
+
+*
+
+***Conceptos sobre git
+
+**git commit y git add: git add es para que mi archivo este dentro de mi entorno de trabajo. Y git commit es para poder tomar un "snapshoot" y asi poder la captura del codigo, en dado caso que queramos volver al ultimo codigo, con el snapshoot lo podremos hacer.
+
+**en git log: nos aparece todas los snapshoots que hemos tomado. 
+
+**Para ignorar carpetas o documentos y no esten en nuestro entorno de trabjo, creamos un archivo(gitignore) que sea donde estaran todos los archivos que ignoraremos. OJO: DENTRO DEL ARCHVO SE PONDRAN EL NOMBRE DE LAS CARPETAS O ARCHIVOS QUE QUERRAMOS IGNORAR.Despues agregas normal el documento al entorno de trabajo. 
+
+*working directory 
